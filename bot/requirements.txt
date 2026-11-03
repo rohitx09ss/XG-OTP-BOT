@@ -1,0 +1,5 @@
+pyTelegramBotAPI==4.29.1
+requests>=2.32,<3
+pymongo[srv]>=4.10,<5
+qrcode[pil]>=8.0,<9
+Pillow>=11,<13

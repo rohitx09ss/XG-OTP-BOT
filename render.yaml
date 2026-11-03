@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: xg-otp-bot
+    runtime: python
+    buildCommand: pip install -r bot/requirements.txt
+    startCommand: python bot/bot.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: FAMWAY_API_KEY
+        sync: false
+      - key: OTP_API_URL
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
